@@ -8,6 +8,11 @@ $(document).ready(function(){
     slidesToShow: 5
   });
 
+  $(".js-clients-slider-single").slick({
+    infinite: true,
+    slidesToShow: 3
+  });
+
   $(".js-certs-slider").slick({
     infinite: true,
     slidesToShow: 6
@@ -22,6 +27,16 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 2
   });
+  $(".js-sidebar-review-slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
+  $(".js-team-slider").slick({
+    infinite: true,
+    slidesToShow: 3
+  });
 
   $(".review-rating").each(function(){
     var rate = parseInt($(this).data("rating"));
@@ -30,6 +45,42 @@ $(document).ready(function(){
 
   $(".faq-quest__icon").click(function(){
     $(this).toggleClass("active").parents(".faq-item").find(".faq-answer").slideToggle(200);
+  });
+
+  $(".js-butter").click(function(){
+    $(this).toggleClass("active");
+    $("#menu").toggleClass("active");;
+  });
+
+  function windowsSlider() {
+    if (window.innerWidth <= 980) {
+      if (($(".js-serv-main__list").length != 0) && !($(".js-serv-main__list").hasClass("slick-slider"))) {
+        $(".js-serv-main__list").slick({
+          infinite: false,
+          dots: false,
+          arrows: true,
+          slidesToShow: 2,
+          responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                adaptiveHeight: true
+              }
+            }
+          ]
+        });
+      }
+    } else {
+      if (($(".js-serv-main__list").length != 0) && ($(".js-serv-main__list").hasClass("slick-slider"))){
+        $(".js-serv-main__list").slick('unslick');
+      }
+    }
+
+  }
+  windowsSlider();
+  $(window).resize(function(){
+    windowsSlider();
   });
   
 
