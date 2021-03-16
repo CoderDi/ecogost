@@ -1,3 +1,34 @@
+@media screen and (max-width: 1320px)
+  .clients
+    &-slider
+      padding: 0 45px
+      .slick
+        &-prev
+          left: 0
+        &-next
+          right: 0
+  .certs
+    &-slider
+      padding: 0 45px
+      .slick
+        &-prev
+          left: 0
+        &-next
+          right: 0
+  .reviews  
+    &-slider
+      padding: 0 45px
+      .slick
+        &-track
+          margin: 0
+        &-prev
+          left: 0
+        &-next
+          right: 0
+  
+
+
+  
 @media screen and (max-width: 1200px)
   .header
     &-top
@@ -13,7 +44,18 @@
         & > li a 
           font-size: 14px
           padding: 0 15px
-
+  .numbers
+    &-item
+      width: 50%
+  .footer
+    &-menu
+      columns: 2
+      flex: unset
+      li
+        margin-right: 20px
+  .page
+    &-block
+      padding: 40px 20px
 
 @media screen and (max-width: 980px)
   .header
@@ -118,6 +160,8 @@
     &-btn
       height: 50px
       margin: 0 auto
+    &-item
+      text-align: left
   .preim
     &-item
       &__container
@@ -138,6 +182,9 @@
       font-size: 26px
       line-height: 1.2
       margin-bottom: 20px
+      &__more
+        font-size: 14px
+        line-height: 1.2
   .serv-main
     margin: 0
     padding: 50px 0
@@ -172,8 +219,96 @@
       max-width: 100%
     &-form
       margin: 0 auto
+    &-list
+      text-align: left
   .btn
     height: 40px
+  .certs
+    &-slider
+      margin-top: 30px
+  .faq
+    margin: 0
+  .footer
+    padding: 50px 0
+    text-align: center
+    &-logo
+      justify-content: center
+      &__block
+        max-width: 100%
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &-menu
+      width: 100%
+      columns: 1
+      padding: 0
+      text-align: center
+      margin: 30px 0
+      li
+        margin: 0 0 10px 0
+    &-contacts
+      text-align: center
+    &-copyright
+      &--desktop
+        display: none
+      &--mobile
+        display: block
+        margin-top: 20px
+  .page
+    margin: 30px 0
+    &-block
+      max-width: 800px
+      margin: 50px auto
+      .commerce-form
+        margin: 0
+  .breadcrumbs
+    margin: 30px 0
+    &-link
+      font-size: 14px
+  .item
+    margin-bottom: 20px
+    &-img
+      width: 200px
+      margin-right: 20px
+    &-content
+      padding: 15px 15px 15px 0
+    &-title
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 10px
+    &-date
+      font-size: 12px
+      line-height: 1.2
+      margin: 10px 0
+    &-text, &-link
+      font-size: 14px
+  .catalog
+    margin-bottom: 50px
+  .service
+    width: 33.333%
+    padding: 0 10px 20px
+    &s
+      &-list
+        margin: 0 -10px
+  .article
+    &-wrapper
+      display: block
+    &-content
+      width: 100%
+      margin-bottom: 50px
+  .sidebar
+    margin: 0
+    width: 100%
+    &-btns, &-spec
+      max-width: 500px
+      margin: 30px auto
+    &-article
+      width: calc(50% - 15px)
+      &s
+        display: flex
+        justify-content: space-between
+
+
 
 @media screen and (max-width: 768px)
   .header
@@ -194,6 +329,16 @@
       margin-bottom: 25px
       font-size: 16px
       line-height: 1.2
+    &-item
+      width: 100%
+      font-size: 14px
+      strong
+        font-size: 16px
+    &-list
+      justify-content: center
+      &-btn
+        margin: 0 auto
+        width: auto
   .preim
     &-wrapper
       display: block
@@ -237,18 +382,224 @@
       h3
         font-size: 18px
         line-height: 1.2
+  .commerce
+    &-title
+      font-size: 24px
+      line-height: 1.2
+      margin-bottom: 20px
+    &-text
+      margin: 0 0 20px
+      font-size: 14px
+      line-height: 1.2
+    &-list
+      li
+        font-size: 14px
+        font-weight: normal
+  .numbers
+    &-flex
+      display: block
+      margin-bottom: 50px
+      &__content
+        padding: 0
+        width: 100%
+    &-img
+      width: 100%
+      max-width: 500px
+      margin: 0 auto 20px
+    &-list
+      margin: 0
+      justify-content: space-between
+    &-item
+      padding: 0
+      width: calc(50% - 10px)
+      margin-bottom: 20px
+      &__value
+        font-size: 32px
+        line-height: 1
+        margin-right: 10px
+      &__text
+        font-size: 16px
+        line-height: 1.2
+  .clients
+    &-slider
+      padding: 0 30px
+  .cert
+    &-container
+      height: 200px
+    &s
+      &-slider
+        padding: 0 30px
+  .long
+    &-flex
+      display: block
+    &-img
+      width: 100%
+      max-width: 500px
+      margin: 0 auto 30px
+      display: flex
+      justify-content: center
+    &-content
+      h3
+        font-size: 26px
+        line-height: 1.2
+        margin-bottom: 20px
+  .work
+    width: 100%
+    &--big &-container
+      height: 250px
+    &-container
+      height: 250px
+    &s
+      &-more
+        display: block
+        text-align: center
+        width: 300px
+        margin: 0 auto
+        color: #f4b711;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        text-decoration: underline;
+      &-list
+        display: block
+        max-width: 500px
+        margin: 0 auto
+      &-col
+        width: 100%
+  .section
+    &-title
+      &__more
+        display: none
+  .review
+    padding: 0
+    &-container
+      padding: 20px
+    &-left
+      display: none
+    &-text
+      font-size: 12px
+    &s
+      &-slider
+        padding: 0 30px
+  .three
+    &-flex
+      display: block
+    &-img
+      width: 100%
+      max-width: 500px
+      margin: 0 auto 30px
+    &-content
+      padding: 0
+      width: 100%
+      max-width: 500px
+      margin: 0 auto
+      text-align: center
+    &-title
+      font-size: 18px
+      line-height: 1.2
+  .faq
+    padding: 50px 0
+    &-item
+      padding: 0 15px
+    &-quest
+      padding: 10px 0
+      &__text
+        font-size: 16px
+        line-height: 1.2
+    &-answer
+      font-size: 14px
+      font-weight: normal
+      padding: 0 0 20px
+  .page
+    h1
+      font-size: 26px
+      line-height: 1.2
+      margin-bottom: 20px
+    &-btn
+      margin-top: 20px
+      height: auto
+      padding: 10px
+    &-block
+      margin: 30px 0
+      padding: 30px 15px
+      &__img
+        display: none
+      &__title
+        text-align: center
+        font-size: 20px
+        line-height: 1.2
+      &__text
+        font-size: 14px
+        line-height: 1.2
+      .commerce-form
+        margin: 0 auto
+        text-align: center
+  .btn
+    white-space: normal
+    text-align: center
+  .service
+    width: calc(50% - 10px)
+    padding: 0
+    margin-bottom: 20px
+    &-content
+      padding: 15px
+    &-title
+      font-size: 16px
+    &-price
+      font-size: 20px
+    &s
+      &-list
+        justify-content: space-between
+        margin: 0 0 -20px
+  .article
+    &-gallery
+      margin: 30px -10px 10px
+      &__item
+        width: 50%
+        padding: 0 10px 20px
+    h2
+      font-size: 18px
+      margin: 10px 0 10px
+
 
 
 @media screen and (max-width: 480px)
   .header
-
-
-
-
-
-
-
-
+  .numbers
+    &-item
+      width: 100%
+  .client
+    &-container
+      padding: 0 10px
+  .commerce
+    &-list
+      li
+        width: 100%
+  .section
+    &-title
+      font-size: 20px
+  .review
+    &-top
+      align-items: flex-start
+      &__img
+        width: 40px
+        height: 40px
+        margin-right: 10px
+      &__text
+        font-size: 12px
+        line-height: 1.2
+  .item
+    &-container
+      display: block
+    &-img
+      width: 100%
+      margin: 0
+      height: 150px
+      min-height: 0
+    &-content
+      padding: 15px
+  .service
+    width: 100%
 
 
 

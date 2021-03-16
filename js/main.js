@@ -5,7 +5,27 @@ $(document).ready(function(){
 
   $(".js-clients-slider").slick({
     infinite: true,
-    slidesToShow: 5
+    slidesToShow: 5,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
   $(".js-clients-slider-single").slick({
@@ -15,17 +35,59 @@ $(document).ready(function(){
 
   $(".js-certs-slider").slick({
     infinite: true,
-    slidesToShow: 6
+    slidesToShow: 6,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $(".js-reviews-slider").slick({
     infinite: true,
-    slidesToShow: 2
+    slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $(".js-sidebar-cert-slider").slick({
     infinite: true,
-    slidesToShow: 2
+    slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 4
+        }
+      }
+    ]
   });
   $(".js-sidebar-review-slider").slick({
     infinite: true,
